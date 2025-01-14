@@ -14,23 +14,28 @@
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 1140px !important;
 }
 
 .button,
-.button-2,
 .button-3 {
     padding: 8px 20px 8px 20px;
     border-radius: 3.48px;
     border: 1px solid #39C6FD;
-    color: var(--color-shovel-knight) !important;
+    background-color: var(--color-shovel-knight) !important;
+}
+
+.button-2 {
+    padding: 8px 20px 8px 20px;
+    border-radius: 4px;
+    border: 1px solid #39C6FD;
+    color: #39C6FD !important;
+    background-color: var(--bg-infinite-night);
 }
 
 .button:hover,
-.button-2:hover,
 .button-3:hover {
-    background: var(--color-shovel-knight);
-    color: var(--color-infinity-night) !important;
+    color: white;
 }
 
 .layer {
@@ -70,6 +75,10 @@
     padding-left: 10px;
 }
 
+.pt-12 {
+    padding-top: 12px;
+}
+
 .pl-13 {
     padding-left: 13px;
 }
@@ -82,8 +91,16 @@
     margin-top: 68px;
 }
 
+.mt-77 {
+    margin-top: 77px;
+}
+
 .mt-166 {
     margin-top: 166px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
 }
 
 /****** width property ******/
@@ -96,8 +113,20 @@
     max-width: 632px;
 }
 
+.max-w-627 {
+    max-width: 627px;
+}
+
+.max-w-680 {
+    max-width: 680px;
+}
+
 .max-w-516 {
     max-width: 516px;
+}
+
+.max-w-1920 {
+    max-width: 1920px !important;
 }
 
 /******* gap *******/
@@ -145,6 +174,13 @@
 }
 
 /******* section-1 *******/
+.apple-logo {
+    transition: all 300ms linear;
+}
+
+.apple-logo:hover {
+    transform: translateY(-20px);
+}
 
 .vertical-align {
     vertical-align: baseline;
@@ -152,18 +188,117 @@
 
 .group-img {
     right: 0%;
-    top: -34%;
-    /* z-index: -1; */
+    top: -43%;
+    z-index: -1;
 }
 
-.slick-slide {
-    display: flex;
-    gap: 24px;
+.ellipse-4 {
+    top: 5%;
+    left: 20%;
+    z-index: -5 !important;
+    width: 200px;
+    height: 582px;
+    filter: blur(60px);
+}
+
+.slick-track {
+    display: flex !important;
+    gap: 30px !important;
+}
+
+.slick-dots li button::before {
+    font-size: 10px !important;
+    opacity: 100% !important;
+    color: white !important;
+    margin-top: 24px;
+}
+
+.slick-dots li.slick-active button::before {
+    opacity: 100%;
+    color: var(--color-hawaii-morning) !important;
 }
 
 .card-1 {
     width: 494px !important;
     height: 461px !important;
+}
+
+
+/******* accordion *******/
+.section-3 .accordion {
+    max-width: 946px;
+}
+
+.pb-60 {
+    padding-bottom: 60px;
+}
+
+.section-3 .accordion-button {
+    box-shadow: none !important;
+    padding: 52px 16px 26px 0px !important;
+}
+
+.section-3 .accordion-button::not(.collapsed) {
+    padding-bottom: 25px;
+}
+
+.section-3 .accordion-item {
+    z-index: 1;
+    border: none;
+}
+
+.section-3 .accordion-item {
+    position: relative;
+    overflow: hidden;
+    background-color: transparent !important;
+}
+
+
+.section-3 .accordion-button {
+    background-color: transparent !important;
+}
+
+.section-3 .accordion-button:not(.collapsed)::after {
+    background-image: url("../images/svg/line-img.svg");
+    background-size: contain;
+    background-position: center;
+    transform: rotate(0);
+}
+
+.section-3 .accordion-button::after {
+    background-image: url("../images/svg/arrow-svg.svg");
+    background-size: contain;
+    background-position: center;
+}
+
+.line {
+    border: 2px solid #39C6FD;
+}
+
+.accordion-img {
+    top: -150px !important;
+    z-index: -1;
+}
+
+@media (max-width: 1399.98px) {
+    .accordion-img {
+        max-width: 350px !important;
+        top: -130px;
+    }
+}
+
+
+@media (max-width: 1199.98px) {
+    .accordion-img {
+        max-width: 250px !important;
+        top: -130px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .accordion-img {
+        max-width: 190px !important;
+    }
 }
 
 @media (max-width:991.98px) {
@@ -188,10 +323,5 @@
 
     .show-navbar {
         right: 0 !important;
-    }
-
-    .button,
-    .button-2 {
-        display: none;
     }
 }

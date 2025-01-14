@@ -7,11 +7,11 @@ const navbarbtn = () => {
 }
 
 $('.slider').slick({
-    dots: false,
+    dots: true,
+    arrows: false,
     infinite: true,
-    autoplaySpeed: 700,
-    autoplay: true,
-    slidesToShow: 4,
+    variableWidth: true,
+    slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
         {
@@ -29,8 +29,6 @@ $('.slider').slick({
                 slidesToShow: 2,
                 slidesToScroll: 1,
                 dots: true,
-                autoplaySpeed: 700,
-                autoplay: true
             }
         },
         {
@@ -39,8 +37,6 @@ $('.slider').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 dots: true,
-                autoplaySpeed: 700,
-                autoplay: true
             }
         }
     ]

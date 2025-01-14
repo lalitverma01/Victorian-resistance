@@ -3,9 +3,12 @@
     --font-secondary: "Open Sans", serif;
     --color-shovel-knight: #39C6FD;
     --color-infinite-night: #070D37;
+    --color-hawaii-morning: #00b7ff;
+    --bg-infinite-night: #070D37;
     --text-2xl: 80px;
     --text-lg: 48px;
     --text-sm: 20px;
+    --text-small: 16px;
     --lh-21: 21.79px;
     --lh-23: 23.71px;
     --lh-25: 25.15px;
@@ -30,6 +33,10 @@
     color: var(--color-infinite-night);
 }
 
+.bg-infinite {
+    color: var(--bg-infinite-night);
+}
+
 .text-2xl {
     font-size: var(--text-2xl);
 }
@@ -40,6 +47,10 @@
 
 .text-sm {
     font-size: var(--text-sm);
+}
+
+.text-small {
+    font-size: var(--text-small);
 }
 
 .lh-21 {
@@ -73,12 +84,31 @@
     }
 }
 
+
+@media (max-width:992px) {
+    .group-img {
+        position: absolute;
+        top: -33%;
+    }
+
+    .section-2 {
+        margin-top: 178px;
+    }
+}
+
 @media (max-width:575.98px) {
-    .i-phone {
-        width: 100%;
+
+    .lh-71 {
+        line-height: 60px;
     }
 
     .gap-30 {
         gap: 20px !important;
+    }
+
+    .group-img {
+        position: absolute;
+        top: -16%;
+        max-width: 250px;
     }
 }
