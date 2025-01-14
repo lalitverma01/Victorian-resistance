@@ -65,6 +65,10 @@
     padding-top: 12px;
 }
 
+.mt-50 {
+    margin-top: 50px !important;
+}
+
 .mt-63 {
     margin-top: 63px;
 }
