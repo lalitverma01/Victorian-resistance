@@ -2,26 +2,26 @@
 @import url(root.css);
 
 .bg-img {
-    background-image: url(../images/bg-img.png);
+    background-image: url(../images/png/bg-img.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.background-img {
+.bg-img-2 {
     background-image: url(../images/svg/section-4-bg-img.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .footer-bg-img {
-    background-image: url(../images/footer-bg-img.png);
+    background-image: url(../images/png/footer-bg-img.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .bg-layer {
-    background-image: url(../images/bg-layer.png);
+    background-image: url(../images/png/bg-layer.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -34,7 +34,7 @@
 .button-3 {
     padding: 8px 20px 8px 20px;
     border-radius: 3.48px;
-    border: 1px solid #39C6FD;
+    border: 1px solid var(--color-shovel-knight);
     background-color: var(--color-shovel-knight) !important;
 }
 
@@ -42,8 +42,8 @@
 .button-4 {
     padding: 8px 20px 8px 20px;
     border-radius: 4px;
-    border: 1px solid #39C6FD;
-    color: #39C6FD !important;
+    border: 1px solid var(--color-shovel-knight);
+    color: var(--color-shovel-knight) !important;
     background-color: var(--bg-infinite-night);
 }
 
@@ -200,6 +200,10 @@
     transform: rotate(-43deg);
 }
 
+.z-5 {
+    z-index: 5 !important;
+}
+
 /******* section-1 *******/
 .apple-logo {
     transition: all 300ms linear;
@@ -219,12 +223,16 @@
     z-index: -1;
 }
 
+.z-index {
+    z-index: -5;
+}
+
 .ellipse-4 {
-    top: 5%;
-    left: 20%;
+    top: -50%;
+    left: -20%;
     z-index: -5 !important;
-    width: 200px;
-    height: 582px;
+    /* width: 200px;
+    height: 582px; */
     filter: blur(60px);
 }
 
@@ -296,11 +304,11 @@
 }
 
 .line {
-    border: 2px solid #39C6FD;
+    border: 2px solid var(--color-shovel-knight);
 }
 
 .accordion-img {
-    top: -150px !important;
+    top: -42% !important;
     z-index: -1;
 }
 
@@ -313,9 +321,13 @@
     margin-top: 55px;
 }
 
+.join-btn:hover {
+    color: white;
+}
+
 .box {
     max-width: 1140px;
-    border: 3px solid #39C6FD;
+    border: 3px solid var(--color-shovel-knight);
     border-radius: 10px;
     padding: 12px;
     background-color: var(--bg-infinite-night);
@@ -349,7 +361,7 @@
 .footer-line {
     width: 1439.61px;
     width: 100%;
-    border: 0.5px solid #39C6FD
+    border: 0.5px solid var(--color-shovel-knight);
 }
 
 /******* media query  *******/
