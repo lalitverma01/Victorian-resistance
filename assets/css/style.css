@@ -17,6 +17,7 @@
     background-image: url(../images/footer-bg-img.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .bg-layer {
@@ -317,6 +318,7 @@
     border: 3px solid #39C6FD;
     border-radius: 10px;
     padding: 12px;
+    background-color: var(--bg-infinite-night);
 }
 
 .phone-img {
@@ -327,6 +329,11 @@
 .iphone {
     max-width: 302.79px;
     height: 608.46px;
+}
+
+.group-5-img {
+    top: 31%;
+    right: 0%;
 }
 
 /******* footer *******/
