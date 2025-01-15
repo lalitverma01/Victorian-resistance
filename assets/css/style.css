@@ -2,9 +2,21 @@
 @import url(root.css);
 
 .bg-img {
-    background-image: url(../images/header-bg-img.png);
+    background-image: url(../images/bg-img.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.background-img {
+    background-image: url(../images/svg/section-4-bg-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-bg-img {
+    background-image: url(../images/footer-bg-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .bg-layer {
@@ -73,6 +85,22 @@
     margin-top: 63px;
 }
 
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.mt-23 {
+    margin-top: 23px;
+}
+
+.mb-36 {
+    margin-bottom: 36px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
 .mt-68 {
     margin-top: 68px;
 }
@@ -100,7 +128,7 @@
 }
 
 .max-w-627 {
-    max-width: 627px;
+    max-width: 627px !important;
 }
 
 .max-w-680 {
@@ -109,6 +137,10 @@
 
 .max-w-516 {
     max-width: 516px;
+}
+
+.max-w-582 {
+    max-width: 582px;
 }
 
 .max-w-810 {
@@ -173,7 +205,7 @@
 }
 
 .apple-logo:hover {
-    transform: translateY(-20px);
+    transform: translateY(-10px);
 }
 
 .vertical-align {
@@ -271,6 +303,33 @@
     z-index: -1;
 }
 
+/******* section-4 *******/
+
+.join-btn {
+    padding: 11px 27px 11px 27px;
+    border-radius: 4px;
+    background: var(--color-shovel-knight);
+    margin-top: 55px;
+}
+
+.box {
+    max-width: 1140px;
+    border: 3px solid #39C6FD;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.phone-img {
+    top: -35%;
+    right: 41px;
+}
+
+.iphone {
+    max-width: 302.79px;
+    height: 608.46px;
+}
+
+/******* media query  *******/
 @media (max-width: 1399.98px) {
     .accordion-img {
         max-width: 350px !important;
@@ -329,5 +388,9 @@
     .button,
     .button-2 {
         display: none !important;
+    }
+
+    .box {
+        padding: 65px 0px 89px 73px;
     }
 }
