@@ -463,3 +463,9 @@
         padding: 65px 0px 89px 73px;
     }
 }
+
+@media (max-width:1199.98px) {
+    .max-w-582 {
+        max-width: 500px !important;
+    }
+}
