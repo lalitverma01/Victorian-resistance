@@ -25,7 +25,7 @@
     background-color: var(--bg-infinite-night);
 }
 
-.container {
+.max-w-1140 {
     max-width: 1140px !important;
 }
 
