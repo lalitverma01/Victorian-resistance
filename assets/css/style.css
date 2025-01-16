@@ -2,9 +2,10 @@
 @import url(root.css);
 
 .bg-img {
-    background-image: url(../images/png/bg-img.png);
+    background-image: url(../images/png/bg-image.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .bg-img-2 {
@@ -20,10 +21,8 @@
     background-position: center;
 }
 
-.bg-layer {
-    background-image: url(../images/png/bg-layer.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+.bg-color {
+    background-color: var(--bg-infinite-night);
 }
 
 .container {
@@ -47,23 +46,25 @@
     background-color: var(--bg-infinite-night);
 }
 
+.join-resistance-btn {
+    padding: 14px 27px 14px 27px;
+    border-radius: 3.48px;
+    border: 1px solid var(--color-shovel-knight);
+    background-color: var(--color-shovel-knight) !important;
+}
+
+.join-resistance-btn:hover {
+    color: var(--color-white);
+}
+
 .button:hover,
 .button-3:hover {
     color: white;
 }
 
-.layer {
-    right: 0%;
-    top: 0%;
-    width: 243.41px;
-    height: 243.41px;
-}
-
-.layer-2 {
-    width: 243.41px;
-    /* height: 243.41px; */
-    bottom: 10%;
-    left: 0%;
+.button-2:hover,
+.button-4:hover {
+    background-color: var(--bg-white);
 }
 
 .blur-layer {
@@ -78,12 +79,24 @@
     padding-top: 12px;
 }
 
+.pr-13 {
+    padding-right: 13px;
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
 .mt-50 {
     margin-top: 50px !important;
 }
 
 .mt-63 {
     margin-top: 63px;
+}
+
+.pl-40 {
+    padding-left: 40px !important;
 }
 
 .mb-32 {
@@ -146,6 +159,10 @@
 
 .max-w-810 {
     max-width: 810px;
+}
+
+.max-w-830 {
+    max-width: 830px;
 }
 
 .max-w-1920 {
@@ -220,7 +237,7 @@
 .group-img {
     right: 0%;
     top: -43%;
-    z-index: -1;
+    z-index: -5;
 }
 
 .z-index {
@@ -230,9 +247,7 @@
 .ellipse-4 {
     top: -50%;
     left: -20%;
-    z-index: -5 !important;
-    /* width: 200px;
-    height: 582px; */
+    z-index: -10;
     filter: blur(60px);
 }
 
@@ -268,7 +283,8 @@
 
 .section-3 .accordion-button {
     box-shadow: none !important;
-    padding: 52px 16px 26px 0px !important;
+    margin: 52px 16px 26px 0px !important;
+    padding: 0 !important;
 }
 
 .section-3 .accordion-button::not(.collapsed) {
@@ -278,6 +294,10 @@
 .section-3 .accordion-item {
     z-index: 1;
     border: none;
+}
+
+.section-3 .accordion-body {
+    padding-top: 0 !important;
 }
 
 .section-3 .accordion-item {
@@ -367,21 +387,25 @@
 /******* media query  *******/
 @media (max-width: 1399.98px) {
     .accordion-img {
-        max-width: 350px !important;
+        max-width: 350px;
         top: -130px;
     }
 }
 
 @media (max-width: 1199.98px) {
     .accordion-img {
-        max-width: 250px !important;
-        top: -130px;
+        max-width: 250px;
+        top: 30px !important;
     }
 }
 
 @media (max-width: 767.98px) {
     .accordion-img {
-        max-width: 190px !important;
+        max-width: 190px;
+    }
+
+    .mt-60 {
+        margin-top: 20px;
     }
 }
 
