@@ -401,15 +401,9 @@
         max-width: 250px;
         top: 30px !important;
     }
-}
 
-@media (max-width: 767.98px) {
-    .accordion-img {
-        max-width: 190px;
-    }
-
-    .mt-60 {
-        margin-top: 20px;
+    .max-w-582 {
+        max-width: 500px !important;
     }
 }
 
@@ -443,6 +437,16 @@
     }
 }
 
+@media (max-width: 767.98px) {
+    .accordion-img {
+        max-width: 190px;
+    }
+
+    .mt-60 {
+        margin-top: 20px;
+    }
+}
+
 @media (min-width:576px) {
     .section-3 .accordion-button {
         padding-right: 16px !important;
@@ -461,11 +465,5 @@
 
     .box {
         padding: 65px 0px 89px 73px;
-    }
-}
-
-@media (max-width:1199.98px) {
-    .max-w-582 {
-        max-width: 500px !important;
     }
 }
